@@ -113,3 +113,45 @@ p.parrafos{
   margin-left: 40px;
   margin-right: 40px;
 }
+
+/* Los estilos para teléfonos y tablet deben ir a lo último */
+/* For tablets: */
+@media only screen and (min-device-width:740px) and (max-device-width:1024px) {
+  .contenedorGral {
+      width: 100%;
+      padding: 0;
+  }
+
+}
+
+/* For mobile phones: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .contenedorGral {
+      width: 100%;
+  }
+  p.columnas{
+    -moz-column-width: 150px;
+    -webkit-column-width: 150px;
+    column-width: 150px;
+    margin-left: 28px;
+    margin-right: 16px;
+  }
+  p.parrafos{
+    margin-left: 28px;
+    margin-right: 16px;
+  }
+  .noticiaContenido h2 {
+    font-size: 7vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .noticiaContenido hr {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .noticiaContenido p {
+    font-size: 4vw;
+    margin: 3 3 3 3;
+  }
+}
